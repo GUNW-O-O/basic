@@ -9,6 +9,8 @@ public class Solution {
     // int d = Integer.parseInt(ba);
     // int answer = (c >= d) ? c : d;
     // return answer;
+
+    // return Math.max(Integer.parseInt(a + "" + b), Integer.parseInt(b + "" + a));
     int answer = 0;
     int aLong = Integer.parseInt("" + a + b);
     int bLong = Integer.parseInt("" + b + a);
