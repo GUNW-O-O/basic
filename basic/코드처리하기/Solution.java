@@ -8,12 +8,12 @@ public class Solution {
     int mode = 0;
     for (char s : arr) {
       if(mode == 0) {
-        if(arr[idx] == 39) mode = 1;
+        if(arr[idx] == 49) mode = 1;
         else if(idx % 2 == 0) {
           sb.append(arr[idx]);
         }
-      } else {
-        if(arr[idx] == 39) mode = 0;
+      } else if (mode == 1) {
+        if(arr[idx] == 49) mode = 0;
         else if(idx % 2 == 1) {
           sb.append(arr[idx]);
         }
