@@ -1,4 +1,4 @@
-package oddOrEven;
+package oddoreven;
 
 import java.util.Scanner;
 

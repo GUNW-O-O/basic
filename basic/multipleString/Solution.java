@@ -1,4 +1,4 @@
-package multipleString;
+package multiplestring;
 
 public class Solution {
   public String solution(String my_string, int k) {

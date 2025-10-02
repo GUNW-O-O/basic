@@ -1,4 +1,4 @@
-package shuffleString;
+package shufflestring;
 
 
 class Solution {

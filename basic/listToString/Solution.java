@@ -1,4 +1,4 @@
-package listToString;
+package listtostring;
 
 public class Solution {
   public String solution(String[] arr) {

@@ -1,4 +1,4 @@
-package switchCase;
+package switchcase;
 import java.util.Scanner;
 
 // 영어 알파벳으로 이루어진 문자열 str이 주어집니다. 
