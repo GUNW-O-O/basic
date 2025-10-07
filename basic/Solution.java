@@ -4,9 +4,11 @@ class Solution {
     int a2 = numer2 * denom1;
     int a = a1 + a2;
     int b = denom1 * denom2;
-    if (a % 2 == 0 && b % 2 == 0) {
-      a /= 2;
-      b /= 2;
+    for (int i = 999; i > 1; i--) {
+      if(a % i == 0 && b % i == 0) {
+        a /= i;
+        b /= i;
+      }
     }
     return new int[]{a, b};
   }
