@@ -1,8 +1,10 @@
+import java.util.Arrays;
+
 class Solution {
-  public int solution(int slice, int n) {
-    if(n % slice == 0) {
-      return n/slice;
-    }
-    else return n/slice + 1;
+  public double solution(int[] numbers) {
+    double answer = Arrays.stream(numbers).sum();
+    answer /= numbers.length;
+    return answer;
+    // return Arrays.stream(numbers).average().orElse(0);
   }
 }
