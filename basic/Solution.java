@@ -1,13 +1,8 @@
 class Solution {
-  public int solution(int n) {
-    int gcd = gcd(6, n);
-    int lcm = 6 * n / gcd;
-    return lcm / 6;
-  }
-
-  private int gcd(int a, int b) {
-    if (b == 0)
-      return a;
-    return gcd(b, a % b);
+  public int solution(int slice, int n) {
+    if(n % slice == 0) {
+      return n/slice;
+    }
+    else return n/slice + 1;
   }
 }
