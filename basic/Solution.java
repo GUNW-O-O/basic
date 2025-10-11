@@ -1,8 +1,10 @@
 class Solution {
-  public String solution(String my_string, int m, int c) {
+  public String solution(int q, int r, String code) {
     StringBuilder sb = new StringBuilder();
-    for (int i = 0; i < my_string.length(); i += m) {
-      sb.append(my_string.charAt(i + c - 1));
+    for (int i = 0; i < code.length(); i++) {
+      if (i % q == r) {
+        sb.append(code.charAt(i));
+      }
     }
     return sb.toString();
   }
