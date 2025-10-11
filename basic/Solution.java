@@ -1,5 +1,7 @@
 class Solution {
-  public int solution(String my_string, String is_prefix) {
-    return my_string.startsWith(is_prefix) ? 1 : 0;
+  public String solution(String my_string, int s, int e) {
+    StringBuilder sb = new StringBuilder(my_string.substring(s, e+1));
+    sb.reverse();
+    return my_string.replace(my_string.substring(s, e+1), sb);
   }
 }
