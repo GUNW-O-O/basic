@@ -1,12 +1,14 @@
-import java.util.Arrays;
-
 class Solution {
-  public String solution(String my_string, int[] indices) {
-    StringBuilder sb = new StringBuilder(my_string);
-    Arrays.sort(indices);
-    for (int i = indices.length - 1; i >= 0; i--) {
-      sb.deleteCharAt(indices[i]);
+  public int[] solution(int start_num, int end_num) {
+    int[] answer = new int[start_num - end_num + 1];
+    int idx = 0;
+    int num = start_num;
+    for (int i = 0; i < answer.length; i++) {
+      answer[idx] = num;
+      idx++;
+      num--;
     }
-    return sb.toString();
+    return answer;
+    // return IntStream.rangeClosed(-start, -end).map(i -> -i).toArray()
   }
 }
