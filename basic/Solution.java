@@ -1,14 +1,7 @@
-class Solution {
-  public int[] solution(String my_string) {
-    int[] answer = new int[52];
+import java.util.stream.IntStream;
 
-    for (char c : my_string.toCharArray()) {
-      if (c >= 'A' && c <= 'Z') {
-        answer[c - 'A']++;
-      } else if (c >= 'a' && c <= 'z') {
-        answer[c - 'a' + 26]++;
-      }
-    }
-    return answer;
+class Solution {
+  public int[] solution(int n, int k) {
+    return IntStream.rangeClosed(1, n).filter(e -> e % k == 0).toArray();
   }
 }
