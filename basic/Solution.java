@@ -1,11 +1,14 @@
 class Solution {
-  public String solution(int q, int r, String code) {
-    StringBuilder sb = new StringBuilder();
-    for (int i = 0; i < code.length(); i++) {
-      if (i % q == r) {
-        sb.append(code.charAt(i));
+  public int[] solution(String my_string) {
+    int[] answer = new int[52];
+
+    for (char c : my_string.toCharArray()) {
+      if (c >= 'A' && c <= 'Z') {
+        answer[c - 'A']++;
+      } else if (c >= 'a' && c <= 'z') {
+        answer[c - 'a' + 26]++;
       }
     }
-    return sb.toString();
+    return answer;
   }
 }
