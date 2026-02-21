@@ -1,6 +1,5 @@
 package stkque.기능개발;
 
-import java.util.*;
 
 class Solution {
   boolean solution(String s) {
