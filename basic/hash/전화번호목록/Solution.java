@@ -1,4 +1,4 @@
-package map.전화번호목록;
+package hash.전화번호목록;
 
 import java.util.Arrays;
 
